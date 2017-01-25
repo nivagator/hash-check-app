@@ -1,7 +1,7 @@
 from tkinter import *
 import tkinter.messagebox as box
 import hashlib
-# MD5
+# MD5 local test strings
 # M:/Downloads/Universal-USB-Installer-1.9.7.0.exe
 # 6EF9B8E4AAF56E0D48EA8E22ECC90A9D
 
@@ -33,7 +33,6 @@ def dialog():
         filehash = hasher.hexdigest()
 # END HASH FUNCTION ===============================
         if not parent:
-            # Generate hash
             box.showinfo(htype+' Hash Generated',filehash)
             hsh.set(filehash)
         else:
@@ -57,7 +56,8 @@ btn = Button(window,text = 'Run', command = dialog, width=10)
 hashtype = StringVar()
 # img = PhotoImage(file = "M:/Python/Capture.gif")
 # imgLbl = Label(window, image = img)
-# Geometry
+
+# Geometry ====================================
 fplbl.grid(row = 1, column = 1, padx = (10,5),pady=(10,5),sticky=W)
 filepath.grid(row=1,column=2,padx=(0,10),pady=(10,5),columnspan=6)
 hlbl.grid(row = 2, column = 1, padx = (10,5),pady = (5,10),sticky=W)
@@ -65,8 +65,8 @@ hashword.grid(row=2, column=2,padx=(0,10),pady = (5,10),columnspan=6)
 btn.grid(row =3,column =3,rowspan=4,sticky=W,padx=(0,10))
 # imgLbl.grid(row =3, column =4,columnspan=4,rowspan=4)
 
+# GENERATE RADIO BUTTONS
 hashoptions = ['MD5','SHA1','SHA256','SHA512']
-
 i = 0
 for txt in hashoptions:
     i += 1
