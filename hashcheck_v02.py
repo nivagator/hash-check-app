@@ -1,5 +1,4 @@
 from tkinter import *
-import tkinter.messagebox as box
 import hashlib
 # MD5 local test strings
 # M:/Downloads/Universal-USB-Installer-1.9.7.0.exe
