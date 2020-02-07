@@ -22,6 +22,7 @@ Using the inlcuded GitHub-Logo.png file, you should be able to conduct the tests
 4. Click Run.
 5. Repeat for remaining libraries.
 
+NOTE: All of these examples should return a successful match.
 ```
 File: C:/Path/To/File/GitHub-Logo.png
 MD5 Hash: d8161a975fa3c78baef1d9f59088e8cd
